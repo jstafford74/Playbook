@@ -1,0 +1,128 @@
+
+ .field {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 15px;
+  grid-template-columns: repeat(12, 50px);
+  grid-template-rows: repeat(10, 50px);
+}
+
+.defense:nth-child(1) {      /*free safety*/
+  grid-row: 1;
+  grid-column: 5;
+}
+
+.defense:nth-child(2) {      /* olb-left*/
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.defense:nth-child(3) {     /* ilb-left */      
+  grid-row: 3;
+  grid-column:4;
+}
+
+.defense:nth-child(4) {    /* ilb-right */
+    grid-row: 3;
+    grid-column: 6;
+  }
+
+
+.defense:nth-child(5) {    /* olb-right */
+  grid-row: 3;
+  grid-column: 8;
+}
+
+
+.defense:nth-child(6) {    /* de-left */
+  grid-row: 4;
+  grid-column: 3;
+}
+
+.defense:nth-child(7) {    /* dg-left */
+  grid-row: 4;
+  grid-column: 4;
+}
+
+.defense:nth-child(8) {    /* dg-right */   
+  grid-row: 4;
+  grid-column: 6;
+}
+
+.defense:nth-child(9) {    /* de-right */   
+  grid-row: 4;
+  grid-column: 8;
+}
+
+.offense:nth-child(10) {  /* se */
+    grid-row: 5;
+    grid-column: 1;
+  }
+
+.offense:nth-child(11) {  /* lt */
+  grid-row: 5;
+  grid-column: 3;
+}
+
+.offense:nth-child(12) {   /* lg */
+  grid-row: 5;
+  grid-column: 4;
+}
+
+.offense:nth-child(13) {   /* c */
+  grid-row: 5;
+  grid-column: 5;
+}
+
+.offense:nth-child(14) {   /* rg */
+  grid-row: 5;
+  grid-column: 6;
+}
+
+.offense:nth-child(15) {   /* rt */
+  grid-row: 5;
+  grid-column: 7;
+}
+
+.offense:nth-child(16) {   /* te */
+    grid-row: 5;
+    grid-column: 8;
+  }
+
+.offense:nth-child(17) {    /* qb */
+    grid-row: 6;
+    grid-column: 5;
+  }
+
+  .offense:nth-child(18) {   /* sb */
+    grid-row: 6;
+    grid-column: 4;
+  }
+
+  
+/* Demo Specific Style */
+.board {
+  padding: 1em 0;
+}
+
+.defense {
+  background: #eaeaea;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border:1px solid red;
+
+}
+
+.offense {
+    background: #eaeaea;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border:1px solid blue;
+    border-radius:50%;
+  
+  }
